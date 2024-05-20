@@ -1,0 +1,97 @@
+
+// https://www.youtube.com/watch?v=rWG70T7fePg&list=PLPrHLaayVkhnNstGIzQcxxnj6VYvsHBHy
+// git video çalışma ödevleri
+// https://www.youtube.com/watch?v=8QP-8NPpSq0&list=PLURN6mxdcwL_sM23fQLdwvzC9Qh0N5RPI 
+// bootstrap çalışma ödevleri
+// https://www.youtube.com/watch?v=7AcVHgedw9I&list=PLjlgAwCIJLUp4CGkvYbcKWmdBji8CsrY7
+// SASS çalışma videoları
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import "header";
+@import "home";
+@import "buttons";
+@import "about";
+@import "favorite";
+@import "model";
+@import "sponsor";
+@import "footer";
+@import "responsive";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+
+}
+:root{
+    --header-hight:3.5rem;
+    --first-color:hsl(23, 100%, 50%);
+    --gradient-color:linear-gradient(90deg, 
+    hsl(23, 4%, 28%) 0%, hsl(23, 4%, 8%) 100%
+    );
+    --white-color: hsl(0, 0%, 100%);
+    --text-color:hsl(23, 4%, 60%);
+    --body-color:hsl(23, 12%, 4%);
+    --container-color:hsl(23, 4%, 10%);
+    --body-font:"Poppins", 'sans-serif';
+    --biggest-font-size:10rem;
+    --h1-font-size:1.5rem;
+    --h2-font-size:1.25rem;
+    --h3-font-size:1rem;
+    --normal-font-size:0.938rem;
+    --small-font-size:0.813rem;
+    --smaller-font-size:0.75rem;
+    --font-regular:400;
+    --font-medium:500;
+    --font-semi-bold:600;
+    /*Z-index*/
+    --z-tooltip:10;
+    --z-fixed:100;
+
+    
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: var(--body-color);
+    color: var(--text-color);
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    width: 50%vw;    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+}
+h1, h2, h3, h4{
+    color: var(--white-color);
+    font-weight: var(--font-semi-bold);
+
+}
+.container{
+    max-width: 1120px;
+    margin-inline: 24px;
+
+}
+
+.grid{
+    display: grid;
+    gap: 24px;
+
+}
+
+.section{
+    padding-block: 80px 16px;
+    text-align: center;
+    
+    
+}
+.section-title{
+    text-align: center;
+    font-size: var(--h2-font-size);
+    margin-bottom: 24px;
+}
+

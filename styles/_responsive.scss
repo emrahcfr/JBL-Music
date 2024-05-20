@@ -1,0 +1,135 @@
+@media screen and (max-width: 340px){
+    .container{
+        margin-inline: 16px;
+    }
+    .home{
+        &-img{
+            width: 180px;
+        }
+        &-title{
+            font-size: 125px;
+        }
+        &-tooltip{
+            top: 5px;
+        }
+    }
+    .footer{
+        &-data{
+            grid-template-columns: repeat(2, 150px);
+            justify-content: center;
+        }
+    }
+
+    .about{
+        &-container{
+            grid-template-columns: 250px;
+            justify-content: center;
+        }
+    }
+    
+
+    .model-tooltip-1{
+        transform: translate(-20px, -1px);
+    }
+    .model-tooltip-2{
+        transform: translate(-50px, 25px);
+    }
+    .model-tooltip-3{
+        transform: translate(-40px,0);
+    }
+    .sponsor-container{
+        grid-template-columns: repeat(1, max-content);
+        align-items: center;
+        justify-content: center;
+    }
+ 
+
+}
+@media screen and (min-width:576px){
+ 
+    
+
+}
+@media screen and (min-width: 768px){
+    .home{
+        &-img{
+            width: 320px;
+        }
+        &-title{
+            font-size: 256px;
+            top: -64px;
+
+        }
+        
+    }
+   
+    .sponsor-container{
+        grid-template-columns: repeat(4, max-content);
+    }
+    .footer-container{
+        justify-content: space-between;
+    }
+    .footer-data{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+}
+@media screen and (min-width: 1000px){
+    .container{
+        margin-inline: auto;
+    }
+    .section-title{
+        font-size: var(--h1-font-size);
+    }
+    .home-img{
+        width: 350px;
+    }
+    .home-title{
+        font-size: 300px;
+        top: -8px;
+        column-gap: 16px;
+    }
+    .home-social-text{
+        font-size: var(--normal-font-size);
+    }
+    .home-social-link{
+        font-size: 24px;
+    }
+    .about-container{
+        grid-template-columns:400px 400px;
+        justify-content: center;
+        align-items: center;
+
+       
+    }
+    .about-data .about-title,
+    .about-description{
+        text-align: initial;
+    }
+    .about-img{
+        width: 400px;
+    }
+
+    .model-tooltip-text{
+        font-size: var(--normal-font-size);
+        padding: 8px 20px;
+        
+    }
+    .model-img{
+        width: 500px;
+    }
+    .model-tooltip-1{
+        transform: translate(20px, 110px);
+    }
+    .model-tooltip-2{
+        transform: translate(-40px, 30px);
+    }
+    .model-tooltip-3{
+        transform: translate(55px, -100px);
+    }
+    .model-tooltip-4{
+        transform: translate(-170px, -50px);
+    }
+ 
+
+}
